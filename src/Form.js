@@ -15,11 +15,11 @@ class Form extends React.Component {
     this.setState({ name: e.target.value})
   }
 
-  handleChangeQues = (e) => {
+  handleChangeQuestion = (e) => {
     this.setState({ question: e.target.value})
   }
 
-  handleChangeAns = (e) => {
+  handleChangeAnswer = (e) => {
     this.setState({ answer: e.target.value})
   }
 
@@ -32,9 +32,9 @@ class Form extends React.Component {
       <form class="container">
         Name: <input value={name} onChange={this.handleChangeName} />
         <br />
-        Question: <input value={question} onChange={this.handleChangeQues} />
+        Question: <input value={question} onChange={this.handleChangeQuestion} />
         <br />
-        Answer: <input value={answer} onChange={this.handleChangeAns} />
+        Answer: <input value={answer} onChange={this.handleChangeAnswer} />
         <br />
         <button class="btn large waves-light pink accent-3" onClick={this.handleSubmit}>Submit</button>
       </form>
